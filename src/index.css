@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 20px;
+  }
+
+  /* High contrast visible focus outline for accessibility */
+  *:focus-visible {
+    outline: 3px solid #1E88E5;
+    outline-offset: 3px;
+  }
+}
+
+/* Striped pattern for unfair test bars in SVG/charts */
+.unfair-stripe {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(239, 108, 0, 0.2),
+    rgba(239, 108, 0, 0.2) 10px,
+    rgba(255, 255, 255, 0.4) 10px,
+    rgba(255, 255, 255, 0.4) 20px
+  );
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
