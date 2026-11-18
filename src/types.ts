@@ -48,12 +48,22 @@ export interface FeedbackItem {
   decidedAt?: number;
 }
 
+export interface ClassVote {
+  studentName: string;
+  teamName: string;
+  vote: 'more' | 'fewer' | 'same';
+  variable: Variable;
+  timestamp: number;
+}
+
 export interface Team {
   id: string;
   name: string;
   avatar: string;
   level: Level;
   mode: Mode;
+  students?: string[]; // student members in this team
+  votes?: Record<string, 'more' | 'fewer' | 'same'>; // studentName -> vote choice
   trials: Trial[];
   hypotheses: Hypothesis[];
   hintsUsed: number;
@@ -65,4 +75,5 @@ export interface AppState {
   teams: Team[];
   activeTeamId: string | null;
   feedbackQueue: FeedbackItem[];
+  classVotes?: ClassVote[];
 }

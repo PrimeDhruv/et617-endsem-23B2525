@@ -3,10 +3,61 @@ import { Level, Variable } from '../types';
 export const TEACHER_PIN = '1234';
 
 export const TEAMS_LIST = [
-  { name: 'Tigers', avatar: '🐯', color: 'from-amber-400 to-orange-500' },
-  { name: 'Parrots', avatar: '🦜', color: 'from-emerald-400 to-green-600' },
-  { name: 'Elephants', avatar: '🐘', color: 'from-blue-400 to-indigo-600' },
-  { name: 'Turtles', avatar: '🐢', color: 'from-teal-400 to-emerald-600' },
+  {
+    name: 'Tigers',
+    avatar: '🐯',
+    color: 'from-amber-400 to-orange-500',
+    members: [
+      { name: 'Aarav Patel', grade: 'Class 4', role: 'Predictor' },
+      { name: 'Diya Sharma', grade: 'Class 4', role: 'Lab Operator' },
+      { name: 'Rohan Verma', grade: 'Class 4', role: 'Bubble Counter' },
+    ],
+  },
+  {
+    name: 'Parrots',
+    avatar: '🦜',
+    color: 'from-emerald-400 to-green-600',
+    members: [
+      { name: 'Ananya Sen', grade: 'Class 4', role: 'Predictor' },
+      { name: 'Vihaan Rao', grade: 'Class 4', role: 'Lab Operator' },
+      { name: 'Meera Nair', grade: 'Class 4', role: 'Thinker' },
+    ],
+  },
+  {
+    name: 'Elephants',
+    avatar: '🐘',
+    color: 'from-blue-400 to-indigo-600',
+    members: [
+      { name: 'Kabir Mehta', grade: 'Class 5', role: 'Lead Analyst' },
+      { name: 'Ishaan Joshi', grade: 'Class 5', role: 'Data Recorder' },
+      { name: 'Tanya Gupta', grade: 'Class 5', role: 'Presenter' },
+    ],
+  },
+  {
+    name: 'Turtles',
+    avatar: '🐢',
+    color: 'from-teal-400 to-emerald-600',
+    members: [
+      { name: 'Priya Reddy', grade: 'Class 3', role: 'Observer' },
+      { name: 'Dev Choudhury', grade: 'Class 3', role: 'Counter' },
+      { name: 'Riya Das', grade: 'Class 3', role: 'Recorder' },
+    ],
+  },
+];
+
+export const ALL_CLASS_STUDENTS = [
+  { name: 'Aarav Patel', team: 'Tigers', avatar: '🐯', grade: 'Class 4', defaultVote: 'more' as const },
+  { name: 'Diya Sharma', team: 'Tigers', avatar: '🐯', grade: 'Class 4', defaultVote: 'more' as const },
+  { name: 'Rohan Verma', team: 'Tigers', avatar: '🐯', grade: 'Class 4', defaultVote: 'same' as const },
+  { name: 'Ananya Sen', team: 'Parrots', avatar: '🦜', grade: 'Class 4', defaultVote: 'more' as const },
+  { name: 'Vihaan Rao', team: 'Parrots', avatar: '🦜', grade: 'Class 4', defaultVote: 'more' as const },
+  { name: 'Meera Nair', team: 'Parrots', avatar: '🦜', grade: 'Class 4', defaultVote: 'fewer' as const },
+  { name: 'Kabir Mehta', team: 'Elephants', avatar: '🐘', grade: 'Class 5', defaultVote: 'more' as const },
+  { name: 'Ishaan Joshi', team: 'Elephants', avatar: '🐘', grade: 'Class 5', defaultVote: 'more' as const },
+  { name: 'Tanya Gupta', team: 'Elephants', avatar: '🐘', grade: 'Class 5', defaultVote: 'same' as const },
+  { name: 'Priya Reddy', team: 'Turtles', avatar: '🐢', grade: 'Class 3', defaultVote: 'more' as const },
+  { name: 'Dev Choudhury', team: 'Turtles', avatar: '🐢', grade: 'Class 3', defaultVote: 'more' as const },
+  { name: 'Riya Das', team: 'Turtles', avatar: '🐢', grade: 'Class 3', defaultVote: 'fewer' as const },
 ];
 
 export const LEVELS_INFO: Record<
