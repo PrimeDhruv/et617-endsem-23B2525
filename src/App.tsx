@@ -8,10 +8,13 @@ import { LookThink } from './pages/LookThink';
 import { Check } from './pages/Check';
 import { TeacherDashboard } from './pages/TeacherDashboard';
 import { About } from './pages/About';
+import { useAppState } from './lib/storage';
 
 export const App: React.FC = () => {
+  const { activeTeam } = useAppState();
+
   return (
-    <Layout>
+    <Layout activeTeam={activeTeam}>
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/ask" element={<AskGuess />} />
