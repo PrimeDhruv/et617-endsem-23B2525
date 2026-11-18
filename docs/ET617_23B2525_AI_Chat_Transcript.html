@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ET617 Course Examination — AI Development Chat Transcript (Roll No: 23B2525)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 14mm 16mm 14mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .header-box {
+      border: 2px solid #2E7D32;
+      background: #E8F5E9;
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+    .header-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1B5E20;
+      margin: 0 0 6px 0;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 20px;
+      font-size: 12px;
+      color: #333333;
+      margin-top: 10px;
+    }
+    .meta-item strong {
+      color: #1B5E20;
+    }
+    .phase-badge-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      background: #ffffff;
+      border: 1px solid #81C784;
+      color: #1B5E20;
+    }
+    .turn {
+      margin-bottom: 18px;
+      page-break-inside: avoid;
+    }
+    .turn-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    .user-header {
+      color: #1565C0;
+    }
+    .assistant-header {
+      color: #2E7D32;
+    }
+    .bubble {
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+    .user-bubble {
+      background: #F0F7FF;
+      border-color: #BBDEFB;
+      border-left: 4px solid #1E88E5;
+    }
+    .assistant-bubble {
+      background: #FAFAFA;
+      border-color: #E0E0E0;
+      border-left: 4px solid #2E7D32;
+    }
+    p {
+      margin: 0 0 8px 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    h1, h2, h3 {
+      color: #1B5E20;
+      margin: 12px 0 6px 0;
+    }
+    h1 { font-size: 16px; }
+    h2 { font-size: 15px; }
+    h3 { font-size: 14px; }
+    ul {
+      margin: 4px 0 8px 20px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    .inline-code {
+      background: #EFEFEF;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      color: #C2185B;
+    }
+    .code-block {
+      background: #263238;
+      color: #ECEFF1;
+      padding: 10px 14px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      line-height: 1.4;
+      margin: 8px 0;
+    }
+    .chat-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 11px;
+    }
+    .chat-table th, .chat-table td {
+      border: 1px solid #CFD8DC;
+      padding: 5px 8px;
+      text-align: left;
+    }
+    .chat-table th {
+      background: #ECEFF1;
+      font-weight: bold;
+    }
+    .chat-table tr:nth-child(even) {
+      background: #F9FBE7;
+    }
+    .page-footer {
+      margin-top: 30px;
+      padding-top: 12px;
+      border-top: 1px solid #E0E0E0;
+      font-size: 10px;
+      color: #757575;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <div class="header-title">🎓 ET617 Educational Technology — Examination AI Chat Disclosure</div>
+    <div class="meta-grid">
+      <div class="meta-item"><strong>Student / Roll No:</strong> 23B2525</div>
+      <div class="meta-item"><strong>Date:</strong> November 18, 2026</div>
+      <div class="meta-item"><strong>Project:</strong> Bubble Lab 🌱 (Photosynthesis Inquiry Lab)</div>
+      <div class="meta-item"><strong>Exam Cards:</strong> P5 (Inquiry) · T3 (Photosynthesis) · L7 (Multi-grade) · C5 (Teacher-in-the-loop)</div>
+      <div class="meta-item"><strong>Live URL:</strong> <a href="https://et617-23b2525.vercel.app">https://et617-23b2525.vercel.app</a></div>
+      <div class="meta-item"><strong>GitHub Repo:</strong> <a href="https://github.com/PrimeDhruv/et617-endsem-23B2525">PrimeDhruv/et617-endsem-23B2525</a></div>
+    </div>
+    <div class="phase-badge-strip">
+      <span class="badge">Phase 1: Scaffold</span>
+      <span class="badge">Phase 2: Simulation Model</span>
+      <span class="badge">Phase 3: Welcome & Guess</span>
+      <span class="badge">Phase 4: Lab Bench SVG</span>
+      <span class="badge">Phase 5: Results & Hints</span>
+      <span class="badge">Phase 6: 5 Check Tasks</span>
+      <span class="badge">Phase 7: Gemini API & Fallback</span>
+      <span class="badge">Phase 8: Teacher Dashboard</span>
+      <span class="badge">Phase 9: Styling & Polish</span>
+      <span class="badge">Phase 10: Documentation</span>
+    </div>
+  </div>
+
+  <div class="chat-container">
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #1</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>hi</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header assistant-header">
+        <span>🤖 AI Assistant (Antigravity)</span>
+        <span>Turn #2</span>
+      </div>
+      <div class="bubble assistant-bubble">
+        <p>Hello! How can I help you today?</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #3</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>I will be giving you prompt about the app i am trying to build you need to analyse this prompt and then build the app accordingly and you the agent instructions file which i have provided in the folder to build one</p>
+<p>Build Specification: &quot;Bubble Lab&quot; — Inquiry-Based Virtual Photosynthesis Lab<br/>0. Your role and how to work</p>
+<p>You are a senior full-stack engineer and learning-experience designer. You are building a production-quality, deployable educational web app for a timed university exam (ET617, roll no. 23B2525). Grading is on fit between problem, learner, content and design constraint, and on the AI design judgement. Visual polish carries few marks. Correctness, clarity and explainability matter most.</p>
+<p>Working rules:</p>
+<p>Read DESIGN.md in the repo root first. It is the source of truth for content, feedback text, persona, scenarios and AI design. Where this spec and DESIGN.md differ, DESIGN.md wins on content and this spec wins on engineering.<br/>Work in the phases in Section 12, in order. After each phase:<br/>run npm run build<br/>fix all errors<br/>make a git commit with the given message. Never make one giant commit. The examiner checks commit history.<br/>Keep the code simple, readable and commented. The student must explain and modify it live in a viva. Prefer plain React state and small components over clever abstractions. No unnecessary libraries.<br/>Never commit secrets. The Gemini API key lives only in the Vercel environment variable GEMINI_API_KEY.<br/>Do not invent new features beyond this spec. If something is ambiguous, choose the simplest option that satisfies the spec and note it in the README under &quot;Decisions&quot;.<br/>1. Exam card (must appear in the About screen)<br/>Field	Value<br/>Identity token	23B2525<br/>P	P5 – Inquiry-based virtual laboratory (Simulation · Inquiry learning · Experimental reasoning)<br/>T	T3 – Factors affecting the rate of photosynthesis (Cl. 10), simplified for Classes 3–5<br/>L	L7 – Multi-grade classroom: one teacher, Classes 3–5 together, one projector and a few shared devices<br/>C	C5 – Teacher-in<br/>&lt;truncated 18195 bytes&gt;<br/>rs the fair-test warning and the trial is tagged ⚠️<br/>[ ] Task 5 creates a pending item; the learner sees &quot;Teacher is checking&quot;; Approve/Edit/Override on /teacher updates the learner view within about 2 seconds<br/>[ ] With no API key or with the network blocked, the offline fallback is labelled and still goes through the teacher queue<br/>[ ] Teacher progress table shows trials, fair %, revisions, hints, scores, misconceptions<br/>[ ] Works at 360px and 1280×720<br/>[ ] No secrets in the repo; .env is in .gitignore<br/>12. Phases and commit messages (commit after EACH)<br/>chore: scaffold vite react ts tailwind router, layout, footer with roll no, about page, vercel.json → stop and tell me to deploy to Vercel now (project name et617-23b2525)<br/>feat: simulation model, fair-test logic, storage with sync<br/>feat: welcome (class/group mode, teams, levels) and ask &amp; guess screens<br/>feat: lab bench SVG scene, controls, run animation, trials<br/>feat: look &amp; think — results table, bar chart, guess vs result, detective hints, revise<br/>feat: check screen with 5 tasks and misconception feedback<br/>feat: gemini feedback api with validation and offline fallback<br/>feat: teacher dashboard — feedback queue approve/edit/override, progress table, demo scenario<br/>style: projector-friendly polish, accessibility, reduced motion<br/>docs: README with run steps, env vars, live URL, file map, decisions<br/>13. README.md contents</p>
+<p>App summary, exam card table, live URL https://et617-23b2525.vercel.app, local run steps (npm i, npm run dev, vercel dev for the API), env var GEMINI_API_KEY, and a file map for viva edits:</p>
+<p>change the formula → src/lib/model.ts<br/>change questions/feedback/hints → src/data/content.ts<br/>change the AI prompt → src/lib/prompts.ts<br/>change the teacher PIN/presets → src/data/content.ts<br/>change colours → tailwind.config / content.ts</p>
+<p>Also include a &quot;Decisions&quot; section and a &quot;Starter templates/libraries used&quot; section.</p>
+<p>Begin now with Phase 1.</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header assistant-header">
+        <span>🤖 AI Assistant (Antigravity)</span>
+        <span>Turn #4</span>
+      </div>
+      <div class="bubble assistant-bubble">
+        <p>I have initiated <code class="inline-code">npm install</code> for our Vite, React 18, TypeScript, and Tailwind CSS stack. I am waiting for the installation to finish before running the initial build and committing Phase 1.</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header assistant-header">
+        <span>🤖 AI Assistant (Antigravity)</span>
+        <span>Turn #5</span>
+      </div>
+      <div class="bubble assistant-bubble">
+        <p>Running <code class="inline-code">npm install</code> to download packages; waiting for it to complete.</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header assistant-header">
+        <span>🤖 AI Assistant (Antigravity)</span>
+        <span>Turn #6</span>
+      </div>
+      <div class="bubble assistant-bubble">
+        <h3>Phase 1 Complete 🚀</h3>
+<p>Phase 1 has been built, verified, and committed:<br/><ul><br/><li><strong>Scaffolded</strong>: Vite + React 18 + TypeScript + Tailwind CSS + <code class="inline-code">react-router-dom</code> v6</li><br/><li><strong>Routing &amp; Navigation</strong>: 7 connected routes configured (<code class="inline-code">/</code>, <code class="inline-code">/ask</code>, <code class="inline-code">/lab</code>, <code class="inline-code">/look</code>, <code class="inline-code">/check</code>, <code class="inline-code">/teacher</code>, <code class="inline-code">/about</code>)</li><br/><li><strong>Layout &amp; Accessibility</strong>: Responsive layout with header, skip-link, and persistent footer (<code class="inline-code">ET617 · Roll No: 23B2525</code>) on every screen</li><br/><li><strong>About Screen</strong>: Complete exam card (P5, T3, L7, C5), identity token <code class="inline-code">23B2525</code>, 3 Bloom&#x27;s learning outcomes, persona summary, AI guardrails, and project credits</li><br/><li><strong>Deployment Config</strong>: <code class="inline-code">vercel.json</code> SPA rewrite configured</li><br/><li><strong>Build Verification</strong>: <code class="inline-code">npm run build</code> passed with zero errors</li><br/><li><strong>Git Commit</strong>: <code class="inline-code">ab5c8cc</code> (<code class="inline-code">chore: scaffold vite react ts tailwind router, layout, footer with roll no, about page, vercel.json</code>)</li><br/></ul></p>
+<p>---</p>
+<p>#### 🛑 Action Required: Initial Vercel Deployment<br/>Please deploy the repository to <strong>Vercel</strong> now:<br/><ul><br/><li><strong>Project Name:</strong> <code class="inline-code">et617-23b2525</code></li><br/><li><strong>Framework Preset:</strong> Vite</li><br/><li><strong>Root Directory:</strong> <code class="inline-code">./</code></li><br/><li><strong>Build Command:</strong> <code class="inline-code">npm run build</code></li><br/><li><strong>Output Directory:</strong> <code class="inline-code">dist</code></li><br/><li><strong>Target URL:</strong> <code class="inline-code">https://et617-23b2525.vercel.app</code></li><br/></ul></p>
+<p>Once deployed or when you&#x27;re ready, let me know and we will proceed to <strong>Phase 2: Simulation model, fair-test logic, storage with sync</strong>.</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #7</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>did you completed the deployment ?</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header assistant-header">
+        <span>🤖 AI Assistant (Antigravity)</span>
+        <span>Turn #8</span>
+      </div>
+      <div class="bubble assistant-bubble">
+        <p>I have pushed the code to your GitHub repository:<br/><strong>[https://github.com/PrimeDhruv/et617-endsem-23B2525](https://github.com/PrimeDhruv/et617-endsem-23B2525)</strong> (branch <code class="inline-code">main</code>).</p>
+<p>To complete the deployment on Vercel:</p>
+<p>1. Open <strong>[vercel.com/new](https://vercel.com/new)</strong> in your browser.<br/>2. Select your GitHub repository: <strong><code class="inline-code">et617-endsem-23B2525</code></strong>.<br/>3. Set <strong>Project Name</strong> to: <code class="inline-code">et617-23b2525</code>.<br/>4. Framework Preset will auto-detect as <strong>Vite</strong> (Build: <code class="inline-code">npm run build</code>, Output: <code class="inline-code">dist</code>).<br/>5. (Optional) Add Environment Variable: <code class="inline-code">GEMINI_API_KEY</code> (if you have your key ready; otherwise we also have the built-in offline fallback).<br/>6. Click <strong>Deploy</strong>.</p>
+<p>Once you click Deploy, <code class="inline-code">https://et617-23b2525.vercel.app</code> will be live, and every time I make a commit and push, Vercel will auto-deploy the updates.</p>
+<p>Let me know once you click Deploy, and we&#x27;ll proceed immediately to <strong>Phase 2: Simulation model, fair-test logic, storage with sync</strong>!</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #9</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>start with phase 2</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #10</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>start with the logic</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #11</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>can you speed up</p>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header assistant-header">
+        <span>🤖 AI Assistant (Antigravity)</span>
+        <span>Turn #12</span>
+      </div>
+      <div class="bubble assistant-bubble">
+        <h3>All Phases Complete &amp; Pushed to GitHub 🚀</h3>
+<p>The entire application <strong>&quot;Bubble Lab 🌱&quot;</strong> has been built, tested, and committed in exact accordance with the specification and your course instructions (<code class="inline-code">ET617</code>, Roll No: <code class="inline-code">23B2525</code>).</p>
+<p>All 10 phase commits are live on GitHub: <strong>[https://github.com/PrimeDhruv/et617-endsem-23B2525](https://github.com/PrimeDhruv/et617-endsem-23B2525)</strong></p>
+<p>---</p>
+<h3>Verified Git Commit History (<code class="inline-code">main</code>)</h3>
+<table class="chat-table">
+<thead><tr><th>Phase</th><th>Commit Hash</th><th>Exact Spec Commit Message</th></tr></thead>
+<tbody>
+<tr><td><strong>Phase 1</strong></td><td><code class="inline-code">ab5c8cc</code></td><td><code class="inline-code">chore: scaffold vite react ts tailwind router, layout, footer with roll no, about page, vercel.json</code></td></tr>
+<tr><td><strong>Phase 2</strong></td><td><code class="inline-code">8f5cbcb</code></td><td><code class="inline-code">feat: simulation model, fair-test logic, storage with sync</code></td></tr>
+<tr><td><strong>Phase 3</strong></td><td><code class="inline-code">86b1751</code></td><td><code class="inline-code">feat: welcome (class/group mode, teams, levels) and ask &amp; guess screens</code></td></tr>
+<tr><td><strong>Phase 4</strong></td><td><code class="inline-code">e5b8113</code></td><td><code class="inline-code">feat: lab bench SVG scene, controls, run animation, trials</code></td></tr>
+<tr><td><strong>Phase 5</strong></td><td><code class="inline-code">f19cc29</code></td><td><code class="inline-code">feat: look &amp; think — results table, bar chart, guess vs result, detective hints, revise</code></td></tr>
+<tr><td><strong>Phase 6</strong></td><td><code class="inline-code">b279884</code></td><td><code class="inline-code">feat: check screen with 5 tasks and misconception feedback</code></td></tr>
+<tr><td><strong>Phase 7</strong></td><td><code class="inline-code">7f49c01</code></td><td><code class="inline-code">feat: gemini feedback api with validation and offline fallback</code></td></tr>
+<tr><td><strong>Phase 8</strong></td><td><code class="inline-code">c788190</code></td><td><code class="inline-code">feat: teacher dashboard — feedback queue approve/edit/override, progress table, demo scenario</code></td></tr>
+<tr><td><strong>Phase 9</strong></td><td><code class="inline-code">1158b18</code></td><td><code class="inline-code">style: projector-friendly polish, accessibility, reduced motion</code></td></tr>
+<tr><td><strong>Phase 10</strong></td><td><code class="inline-code">f3c93e3</code></td><td><code class="inline-code">docs: README with run steps, env vars, live URL, file map, decisions</code></td></tr>
+</tbody></table>
+<p>---</p>
+<h3>What Was Built &amp; Verified</h3>
+<p>1. <strong>Footer on Every Screen:</strong> <code class="inline-code">&quot;ET617 · Roll No: 23B2525&quot;</code> visible across all 7 routes.<br/>2. <strong>About Screen ([<code class="inline-code">/about</code>](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/pages/About.tsx)):</strong> Official Exam Card table with token <code class="inline-code">23B2525</code>, P5, T3, L7, C5, 3 Bloom&#x27;s learning outcomes, persona summary, AI guardrails, and project credits.<br/>3. <strong>Inquiry Cycle (7 Connected Screens):</strong><br/><ul><br/><li><strong>Welcome ([<code class="inline-code">/</code>](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/pages/We</li><br/></ul><br/>&lt;truncated 389 bytes&gt;<br/>sis phrasing with class vote tallies.<br/><ul><br/><li></strong>Lab Bench ([<code class="inline-code">/lab</code>](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/pages/LabBench.tsx)):** Responsive SVG beaker with *Hydrilla*, movable lamp, thermometer, baking soda spoons, 10s animated bubble run, and fair-test warning dialog.</li><br/><li><strong>Look &amp; Think ([<code class="inline-code">/look</code>](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/pages/LookThink.tsx)):</strong> Trials table, pure SVG bar chart with striped unfair bars, Guess vs Result evaluation card, and 4-step non-revealing Detective Hints ladder (Reflect ➔ Compare ➔ Suggest 35°C ➔ Revise).</li><br/><li><strong>Check ([<code class="inline-code">/check</code>](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/pages/Check.tsx)):</strong> 5 multi-format assessment tasks with instant rule-based feedback and Task 5 Gemini AI + Teacher approval loop.</li><br/><li><strong>Teacher Dashboard ([<code class="inline-code">/teacher</code>](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/pages/TeacherDashboard.tsx)):</strong> Protected by PIN <code class="inline-code">1234</code>, KPI stats banner, Section A AI Feedback Queue with <strong>Approve ✅ / Edit ✏️ / Override 🔁</strong>, Section B team progress table, and Section C 🦜 Parrots demo scenario loader.</li><br/></ul><br/>4. <strong>Resilience &amp; Fallback:</strong> If Gemini API key is missing or network times out, <code class="inline-code">src/lib/misconceptions.ts</code> provides instant rule-based feedback tagged as <code class="inline-code">📴 Offline feedback</code>, still requiring teacher approval (Constraint C5).<br/>5. <strong>Zero Errors:</strong> <code class="inline-code">npm run build</code> passes with 0 TypeScript/compilation errors.</p>
+<p>---</p>
+<h3>Examiner &amp; Viva Quick Reference</h3>
+<ul>
+<li><strong>Live URL:</strong> [https://et617-23b2525.vercel.app](https://et617-23b2525.vercel.app)</li>
+<li><strong>Demo Script (5 min):</strong> [docs/06_DEMO_SCRIPT.md](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/docs/06_DEMO_SCRIPT.md)</li>
+<li><strong>Viva Q&amp;A (25+ questions):</strong> [docs/07_VIVA_QA.md](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/docs/07_VIVA_QA.md)</li>
+<li><strong>Code Walkthrough:</strong> [docs/09_CODE_WALKTHROUGH.md](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/docs/09_CODE_WALKTHROUGH.md)</li>
+<li><strong>Formula Edits:</strong> [src/lib/model.ts](file:///Users/dhruvvaghasiya/Desktop/EtEndsem/src/lib/model.ts)</li>
+<li><strong>Teacher PIN:</strong> <code class="inline-code">1234</code></li>
+</ul>
+      </div>
+    </div>
+
+    <div class="turn">
+      <div class="turn-header user-header">
+        <span>👤 Candidate (Student: 23B2525)</span>
+        <span>Turn #13</span>
+      </div>
+      <div class="bubble user-bubble">
+        <p>give me the chat in pdf downloadable form</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    ET617 Course Examination · Roll No: 23B2525 · Official AI Development Trajectory Log · Antigravity AI Assistant
+  </div>
+
+</body>
+</html>
