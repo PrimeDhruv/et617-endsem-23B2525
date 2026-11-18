@@ -122,82 +122,92 @@ export const DETECTIVE_HINTS = {
   },
 };
 
+export const TASK_1_MCQ = {
+  id: 'task-1',
+  type: 'mcq' as const,
+  title: 'Task 1: Predict Light Effect',
+  question: 'If we bring the lamp closer to the plant, the bubbles will…',
+  options: [
+    { id: 'increase', text: 'Increase ⬆ (more bubbles)' },
+    { id: 'decrease', text: 'Decrease ⬇ (fewer bubbles)' },
+    { id: 'same', text: 'Stay the same ➖' },
+  ],
+  correctAnswer: 'increase',
+  feedback: {
+    correct: '🌟 Spot on! Closer lamp means stronger light, so the plant makes more food and oxygen bubbles!',
+    decrease: '🤔 Look again! Remember when we moved the lamp closer in the lab? Strong light gives the plant more energy.',
+    same: '🤔 Check your lab trials! When the lamp was Near vs Far, did the bubble count stay identical?',
+  },
+};
+
+export const TASK_2_TF = {
+  id: 'task-2',
+  type: 'true_false' as const,
+  title: 'Task 2: Light Requirement',
+  question: 'Plants can make food in the dark if they have warm water.',
+  options: [
+    { id: 'true', text: 'True' },
+    { id: 'false', text: 'False' },
+  ],
+  correctAnswer: 'false',
+  feedback: {
+    correct: '🎉 Excellent! Plants MUST have light energy to make food. In total darkness (Off), bubbles were 0!',
+    incorrect: '🤔 Remember our Off trial? Even with warmth and baking soda, 0 light meant 0 bubbles. Plants cannot make food in the dark! (Misconception M2)',
+  },
+};
+
+export const TASK_3_BAR = {
+  id: 'task-3',
+  type: 'tap_bar' as const,
+  title: 'Task 3: Reading Your Results',
+  question: 'Look at the bar chart below. Tap the trial bar that made the MOST bubbles!',
+  feedback: {
+    correct: '🏆 You found it! That trial had the best combination of light and warmth for photosynthesis!',
+    incorrect: '🔍 Look for the tallest bar on the chart! Which trial reached the highest bubble count?',
+  },
+};
+
+export const TASK_4_FAIR = {
+  id: 'task-4',
+  type: 'fair_test' as const,
+  title: 'Task 4: Spot the Fair Test',
+  question: 'Two students want to test if baking soda (CO₂) helps the plant. Which test is FAIR?',
+  options: [
+    {
+      id: 'A',
+      title: 'Setup A (Changes 1 thing)',
+      desc: 'Trial 1: 1 spoon, 25°C, Near lamp.\nTrial 2: 3 spoons, 25°C, Near lamp.',
+      fair: true,
+    },
+    {
+      id: 'B',
+      title: 'Setup B (Changes 3 things)',
+      desc: 'Trial 1: 1 spoon, 25°C, Far lamp.\nTrial 2: 3 spoons, 45°C, Near lamp.',
+      fair: false,
+    },
+  ],
+  correctAnswer: 'A',
+  feedback: {
+    correct: '🎯 Brilliant scientist thinking! Setup A changes ONLY ONE thing (baking soda). That is a fair test!',
+    incorrect: '🤔 In Setup B, three things changed at once! If the bubbles change, we cannot know which one caused it.',
+  },
+};
+
+export const TASK_5_OPEN = {
+  id: 'task-5',
+  type: 'open_ended' as const,
+  title: 'Task 5: Scientific Explanation',
+  question: 'Why did the bubbles drop when the water was heated to 45°C?',
+  placeholder: 'Explain what happened to the plant in hot water (because…)',
+  classPlaceholder: 'Teacher types the class answer discussed together…',
+};
+
 export const CHECK_TASKS = [
-  {
-    id: 'task-1',
-    type: 'mcq' as const,
-    title: 'Task 1: Predict Light Effect',
-    question: 'If we bring the lamp closer to the plant, the bubbles will…',
-    options: [
-      { id: 'increase', text: 'Increase ⬆ (more bubbles)' },
-      { id: 'decrease', text: 'Decrease ⬇ (fewer bubbles)' },
-      { id: 'same', text: 'Stay the same ➖' },
-    ],
-    correctAnswer: 'increase',
-    feedback: {
-      correct: '🌟 Spot on! Closer lamp means stronger light, so the plant makes more food and oxygen bubbles!',
-      decrease: '🤔 Look again! Remember when we moved the lamp closer in the lab? Strong light gives the plant more energy.',
-      same: '🤔 Check your lab trials! When the lamp was Near vs Far, did the bubble count stay identical?',
-    },
-  },
-  {
-    id: 'task-2',
-    type: 'true_false' as const,
-    title: 'Task 2: Light Requirement',
-    question: 'Plants can make food in the dark if they have warm water.',
-    options: [
-      { id: 'true', text: 'True' },
-      { id: 'false', text: 'False' },
-    ],
-    correctAnswer: 'false',
-    feedback: {
-      correct: '🎉 Excellent! Plants MUST have light energy to make food. In total darkness (Off), bubbles were 0!',
-      incorrect: '🤔 Remember our Off trial? Even with warmth and baking soda, 0 light meant 0 bubbles. Plants cannot make food in the dark! (Misconception M2)',
-    },
-  },
-  {
-    id: 'task-3',
-    type: 'tap_bar' as const,
-    title: 'Task 3: Reading Your Results',
-    question: 'Look at the bar chart below. Tap the trial bar that made the MOST bubbles!',
-    feedback: {
-      correct: '🏆 You found it! That trial had the best combination of light and warmth for photosynthesis!',
-      incorrect: '🔍 Look for the tallest bar on the chart! Which trial reached the highest bubble count?',
-    },
-  },
-  {
-    id: 'task-4',
-    type: 'fair_test' as const,
-    title: 'Task 4: Spot the Fair Test',
-    question: 'Two students want to test if baking soda (CO₂) helps the plant. Which test is FAIR?',
-    options: [
-      {
-        id: 'A',
-        title: 'Setup A (Changes 1 thing)',
-        desc: 'Trial 1: 1 spoon, 25°C, Near lamp.\nTrial 2: 3 spoons, 25°C, Near lamp.',
-        fair: true,
-      },
-      {
-        id: 'B',
-        title: 'Setup B (Changes 3 things)',
-        desc: 'Trial 1: 1 spoon, 25°C, Far lamp.\nTrial 2: 3 spoons, 45°C, Near lamp.',
-        fair: false,
-      },
-    ],
-    correctAnswer: 'A',
-    feedback: {
-      correct: '🎯 Brilliant scientist thinking! Setup A changes ONLY ONE thing (baking soda). That is a fair test!',
-      incorrect: '🤔 In Setup B, three things changed at once! If the bubbles change, we cannot know which one caused it.',
-    },
-  },
-  {
-    id: 'task-5',
-    type: 'open_ended' as const,
-    title: 'Task 5: Scientific Explanation',
-    question: 'Why did the bubbles drop when the water was heated to 45°C?',
-    placeholder: 'Explain what happened to the plant in hot water (because…)',
-    classPlaceholder: 'Teacher types the class answer discussed together…',
-  },
+  TASK_1_MCQ,
+  TASK_2_TF,
+  TASK_3_BAR,
+  TASK_4_FAIR,
+  TASK_5_OPEN,
 ];
 
 export const WHAT_YOU_DISCOVERED = [
